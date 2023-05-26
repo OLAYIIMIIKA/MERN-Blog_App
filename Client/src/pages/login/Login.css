@@ -1,0 +1,58 @@
+.login{
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    color: rgb(15, 164, 164);;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgba(225, 255, 255,0.5),rgba(225, 255, 255,0.5)), url("https://www.shutterstock.com/image-photo/blog-concept-cloud-chart-print-260nw-249575503.jpg");
+    background-size: cover;
+}
+
+.loginTitle {
+    font-size: 50px;
+}
+
+.loginForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm > label {
+    margin: 10px 0;
+}
+
+.loginInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.loginButton {
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgb(15, 164, 164);
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.loginButton:disabled{
+    cursor: not-allowed;
+    background-color: rgb(129, 173, 173);
+}
+
+.loginSign-upButton {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(238, 114, 114);
+    color: white;
+    cursor: pointer;
+}

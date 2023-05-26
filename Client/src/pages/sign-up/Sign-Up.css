@@ -1,0 +1,53 @@
+.Sign-Up{
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    /* color:  rgb(238, 114, 114); */
+    flex-direction: column;
+    justify-content: center;
+    background:linear-gradient(rgba(225, 255, 255,0.5),rgba(225, 255, 255,0.5)),  url("https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGxvZ2lufGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+    background-size: cover;
+}
+
+.Sign-UpTitle {
+    font-size: 50px;
+}
+
+.Sign-UpForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Sign-UpForm > label {
+    margin: 10px 0;
+}
+
+.Sign-UpInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.Sign-UpButton {
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color:  rgb(238, 114, 114);
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.Sign-UpSign-upButton {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(15, 164, 164);
+    color: white;
+    cursor: pointer;
+}
