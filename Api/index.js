@@ -18,8 +18,9 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("Baba don connect"))
-  .catch((err) => console.log("Baba don jabo"));
+  .then(() => console.log("Connected to MongoDB"))
+  .catch((err) => console.log(err));
+
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
