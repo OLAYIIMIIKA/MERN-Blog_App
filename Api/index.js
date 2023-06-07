@@ -8,9 +8,17 @@ const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");
+const cors = require("cors");
 
 dotenv.config();
 app.use(express.json());
+app.use(
+  cors({
+    origin: "https://olayiimiika-blog-app.netlify.app",
+    // You can add more allowed origins if needed
+  })
+);
+
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 console.log("MONGO_URL:", process.env.MONGO_URL);
@@ -22,7 +30,6 @@ mongoose
   })
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log(err));
-
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {

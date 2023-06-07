@@ -16,7 +16,6 @@
     "start": "nodemon index.js",
     "build": "npm i"
   },
-  
   "author": "",
   "license": "ISC",
   "description": ""
