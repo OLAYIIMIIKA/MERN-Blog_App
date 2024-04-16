@@ -14,7 +14,7 @@ export default function SignUp() {
     setError(false);
     try {
       const res = await axios.post(
-        process.env.BACKEND_URL+"/api/auth/register",
+        "https://olayiimiikas-blog-app-api.onrender.com/api/auth/register",
         {
           username,
           email,
@@ -23,7 +23,7 @@ export default function SignUp() {
       );
       res.data &&
         window.location.replace(
-          process.env.FRONTEND_URL+"/Login"
+         "https://olayiimiika-blog-app.netlify.app/Login"
         );
     } catch (err) {
       setError(true);
