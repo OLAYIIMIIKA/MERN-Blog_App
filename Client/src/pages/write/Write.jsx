@@ -25,7 +25,7 @@ export default function Write() {
       data.append("file", file);
       newPost.photo = filename;
       try {
-        await axios.post(process.env.REACT_APP_BACKEND_URL+"/api/posts", data);
+        await axios.post(process.env.REACT_APP_BACKEND_URL+"/api/posts", {...data, ...newPost});
       } catch (err) {
         // Handle error
       }
