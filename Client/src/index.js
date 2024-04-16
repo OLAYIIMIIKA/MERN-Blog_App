@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { ContextProvider } from './context/Context';
-import 'dotenv/config';
 
 ReactDOM.render(
   <React.StrictMode>
