@@ -32,7 +32,7 @@ export default function Write() {
     }
     try {
       const res = await axios.post(process.env.REACT_APP_BACKEND_URL+"/posts", newPost);
-      window.location.replace("/Post/" + res.data._id);
+      window.location.replace("/post/" + res.data._id);
     } catch (err) {
       // Handle error
     }
