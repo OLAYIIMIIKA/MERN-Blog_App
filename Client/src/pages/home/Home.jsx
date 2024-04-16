@@ -13,7 +13,7 @@ export default function Home() {
 
   useEffect(()=>{
     const fetchPosts = async ()=>{
-      const res = await axios.get(process.env.BACKEND_URL+"/api/posts" + search);
+      const res = await axios.get("https://olayiimiikas-blog-app-api.onrender.com/api/posts" + search);
       setPosts(res.data)
     }
     fetchPosts()
